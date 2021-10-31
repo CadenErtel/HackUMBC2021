@@ -14,6 +14,9 @@ def login_page() -> None:
 
     col1, col2 = st.columns(2)
 
+    with col1:
+        st.image('arrow.png')
+
     # this will put a button in the middle column
     with col2:
         
