@@ -1,21 +1,29 @@
-"""
-Main Page for HackUMBC
-Name: SizeUp
-Authors: Caden Ertel, Christopher Slaughter, Adetunji Fasiku
-Discription:
-"""
-import streamlit as st
+import streamlit as st 
+from login import *
+from dashboard import *
 
+############################## APP ##########################################
 
-st.title('SizeUp!')
-st.subheader('A personal fitness community at your fingertips')
+class App():
 
+    def __init__(self):
+        self.pages = {'login':login_page, 'home':home_page}
+        self.currentPage = 'login'
 
-col1, col2, col3 = st.columns(3)
+    def update(self, newPage:str):
+        self.currentPage = newPage
 
-# this will put a button in the middle column
-with col1:
-    st.button('Login')
+    def run(self):
+        if self.currentPage == 'login':
+            self.pages[self.currentPage]()
+        if self.currentPage == 'home':
+            self.pages[self.currentPage]()
 
-with col3:
-    st.button('Create an Account')
+################################ MAIN ##########################################
+
+def main() -> None:
+    app = App()
+    app.run()
+    
+if __name__ == '__main__':
+    main()
