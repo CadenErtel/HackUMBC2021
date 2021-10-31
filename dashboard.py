@@ -1,3 +1,10 @@
+"""
+Home Page for HackUMBC
+Name: SizeUp
+Authors: Caden Ertel, Christopher Slaughter, Adetunji Fasiku, David Nguyen
+Description: this file will store the main code for our web app
+"""
+
 import streamlit as st
 from streamlit_player import st_player
 import sqlite3
