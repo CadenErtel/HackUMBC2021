@@ -1,0 +1,32 @@
+When beginning the hackathon, we came up with the idea to create fitness app, 
+we knew we wanted to create a mock-up of a feature similar to Nike run club where you 
+can track your own progress but also see what friends are up to.
+
+for our project, we decided we would use the streamlit library as supposed to other architectures such as Flask or Django,
+especially since most of us don't have extensive front end abilitiies, 
+
+we began with creating a login page, that can 
+authenticate a user passed on their username and password, and possibly in the future integrating logins from other apps
+the one setback of using streamlit that we ran into here is that 
+we werent able to find a way to be able to redirect the page to a different URL and therefore be able to switch off this 
+login page
+
+so lets just pretend that the login page would redirect to our home page, which will place the user on the weekly fitness
+plan landing page. Based on the fitness plan the user chooses, the weekly overview of all their exercises will change, for example,
+changing to a push pull legs plan will change the exercises on the right
+
+if we move onto the calendar, you get a more in-depth of the per day training where for both the weekly and daily plans, it
+pulls from a SQLite database and creates exercise objects to be able to display the data to the user
+
+due to our time constraint, we werent able to create a friends page as well as we liked, however, instead we have images exampling
+seeing all your friends on the app such as Shrek and Yoda
+
+a thing thats important to us, is making sure your doing the excercises correctly, because you can get seriously injured or hospitalized if
+you are working out improperly, [showcase Hands]
+
+finally, our last page is a nutrition calculator which depending on ther options you use, will determine how many calories, grams of carbs, proteins,
+and fat you need within your diet to reach that goal.
+
+I thank you for your time and I hope you enjoyed our app SizeUp!
+
+

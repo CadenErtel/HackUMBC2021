@@ -15,7 +15,7 @@ def login_page() -> None:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image('arrow.png')
+        st.image('sizeup.png')
 
     # this will put a button in the middle column
     with col2:
@@ -26,7 +26,7 @@ def login_page() -> None:
         passwordInput = st.text_input('Password', type="password")
         if st.button("Login"):
             if usernameInput == 'Caden' and passwordInput == 'password':
-                return 'home'
+                st.markdown("<h1 style='text-align: center; color: white; font-size: 16px; font-family: Andale Mono,AndaleMono,monospace;'>Authorized!</h1>", unsafe_allow_html=True)
 
         st.markdown("<a style='margin-left: auto; margin-right: auto; color: white;' href=\"https://www.facebook.com\" >Login with facebook</a>", unsafe_allow_html=True)
         st.markdown("<a style='margin: auto; color: white;' href=\"https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0\" >Forgot Password?</a>", unsafe_allow_html=True)
